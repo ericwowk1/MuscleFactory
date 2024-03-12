@@ -1,0 +1,373 @@
+body {
+   font-family: 'Roboto', sans-serif; 
+}
+
+
+.NavBar{
+   position:fixed;
+   background-color: rgba(70, 67, 67, 0.3);
+   border-color: aliceblue;
+   
+   top:0px;
+   padding-left: 150px;
+   height:100px;
+   width:2000px;
+   margin-right: 10px;
+   border-left:6px solid black;
+   z-index: 1000;
+}
+.NavBar li{
+   display:inline;
+   line-height: 65px;
+  color: rgb(252, 252, 252);
+  width:300px;
+  
+  margin-left: 20px;
+  
+  transition: all 0.3s ease-in-out;
+   font-weight: 800;
+   padding: 12px 40px;
+   margin: 10;
+  
+   
+}
+.NavBar a {
+   color: inherit; 
+   font-weight: normal;
+   text-decoration: none; 
+   display: inline-block; 
+}
+
+.logo img{
+   width:150px;
+   height:100px;
+position:fixed;
+   left:0px;
+   top:0px;
+}
+.NavBar li:hover {
+   background-color: azure;
+   color:black;
+   padding: 40px;
+   border: 4px solid azure;
+   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+}   
+.NavBar li.menu {
+   position:fixed;
+   top: 0;
+   right: 0;
+   padding: 14px 12px;
+  
+ 
+}
+/* UDEMY #26 Active navbar settings to change when scrolling down */
+.NavBar.active {
+   background-color: rgb(190, 190, 190); 
+   transition: background-color 0.3s ease-in-out; 
+   position:fixed;
+  
+   top:0px;
+   padding-left: 150px;
+   height:100px;
+   width:2000px;
+   margin-right: 10px;
+
+}
+.NavBar.active li {
+   color: black; 
+}
+.NavBar.active li:hover {
+   background-color: rgb(0, 0, 0);
+   color:rgb(255, 255, 255);
+   padding: 40px;
+   border: 4px solid rgb(88, 88, 88);
+   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+}   
+.NavBar.active li.menu {
+   position:fixed;
+   top: 0;
+   right: 0;
+   padding: 14px 12px;
+   z-index: 1000;
+}  
+
+
+.memberships {
+   background-color: rgb(43, 41, 41);
+}
+.membership-options {
+   display: flex;
+   justify-content: center;
+   gap: 20px; 
+   padding: 20px;
+  
+   margin-top: 300px;
+}
+
+
+.membership-option {
+   width: 300px; 
+   background-color: #222; 
+   color: white;
+   padding: 20px;
+   border-radius: 10px; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.membership-option p {
+   font-size: 24px;
+   margin: 10px 0;
+}
+
+.membership-option ul {
+   list-style: none; 
+   padding: 0;
+   text-align: left;
+   width: 100%; 
+}
+
+.membership-option li {
+   margin: 10px 0; 
+   padding-left: 20px; 
+   position: relative; 
+}
+
+.membership-option li:before {
+   content: '✓'; 
+   color: #4CAF50; 
+   position: absolute;
+   left: 0;
+}
+
+.choose-plan {
+   background-color: #B22222; 
+   color: white;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   margin-top: 20px; 
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+
+/** CHOOSE PLAN START **/
+.toggle-container{
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+   width:200px;
+}
+/*MAKES the checkbox invisible so we can add a slider instead */
+.toggle {
+   visibility: hidden;
+}
+.label {
+   width: 80px;
+   position:relative;
+   height:40px;
+   background-color:grey;
+   border-radius:50px;
+   cursor:pointer;
+   display:inline-block;
+   margin:0 15px 0;
+}
+
+.toggle:checked + .label {
+   background-color: #B22222;
+}
+
+.ball {
+   background: white;
+   height:34px;
+   width:34px;
+   border-radius:50%;
+   position: absolute;
+   top:3px;
+   left:3px;
+   align-items: center;
+justify-content:center;
+animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+   animation: slideOn 0.3s linear forwards;
+}
+
+/*SLIDER ANIMATION UDEMY #33*/
+@keyframes slideOn {
+0% {
+   transform: translateX(0) scale(1)
+}
+50% {
+   transform: translateX(20x) scale(1.2);
+}
+100% {
+   transform: translateX(30px) scale(1)
+}
+}
+@keyframes slideOff {
+   0% {
+      transform: translateX(30px) scale(1)
+   }
+   50% {
+      transform: translateX(20x) scale(1.2);
+   }
+   100% {
+      transform: translateX(0) scale(1)
+   }
+   }
+/**CHOOSE PLAN END**/
+
+
+.signupform {
+   max-width: 600px; 
+   margin: 0 auto;
+}
+
+.section {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px; 
+}
+
+.inputs {
+   flex-basis: 48%; 
+}
+
+.inputs label {
+   display: block;
+   color:aliceblue;
+   margin-bottom: 5px; 
+}
+
+.inputs input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px; 
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.submitbtn {
+   background-color: #a83232; 
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%; 
+   box-sizing: border-box; 
+}
+
+.planselector {
+   display: inline-block;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 20px;
+}
+.header {
+   position:absolute;
+   bottom:600px;
+   right:550px;
+   color:#B22222;
+   font-size: 40px;
+}
+
+footer {
+    
+   display:flex;
+   flex-direction: row; 
+   align-items: start;
+   background-color: rgb(178, 180, 182);
+   top:920px;
+   width:100%;
+   height:220px;
+   
+  h3 {
+       font-weight: normal; 
+   }
+
+
+}
+
+.home, .signup, .company, .policy, .sociallinks{
+   margin-left: 120px; 
+   margin-top: 20px; 
+ 
+}
+.sociallinks .icons {
+   display: flex;
+   justify-content: space-between;
+   width: 100%; 
+   margin-top: 10px; 
+}
+.sociallinks .icons .social-icon {
+color:black;
+   font-size: 35px; 
+}
+
+footer h3 {
+   color: black;
+   font-weight: normal; 
+   margin-top: 10px; 
+   margin-bottom: 10px; 
+}
+
+footer a {
+   color: black;
+   text-decoration: none; 
+   display: block; 
+}
+
+footer a:hover {
+   text-decoration: underline; 
+}
+
+/*UDEMY #5 HIDDEN SEARCH WIDGET*/
+.search {
+   position: absolute; 
+   top: 20px;
+   right: 5%; 
+   z-index: 2000; 
+}
+.search .input {
+ 
+   border:0;
+   font-size: 18px;
+   padding:10px;
+   height:25px;
+   width:30px;
+   transition:width 0.3s ease;
+}
+.btn {
+   position:absolute;
+   background-color: rgba(106, 21, 21, 1);
+   border:0;
+   cursor:pointer;
+   font-size: 24px;
+   top:0px;
+   left:0px;
+   height:50px;
+   width:50px;
+   transition: transform 0.3s ease;
+}
+
+.btn:focus, .input:focus {
+   outline: none;
+}
+
+.search.active .input {
+   width:200px;
+   height:30px;
+}
+
+.search.active .btn {
+   transform: translateX(210px);
+}
+/*END  OF UDEMY #5 HIDDEN SEARCH WIDGET */

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Memberships.css">
+    <meta charset="UTF-8">
+    <!-- Montserrat font from Goolge-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100.
+.900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,
+900&display=swap" rel="stylesheet">
+<!--LINK for the font awesome library for social media icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="memberships">
+   
+      <nav class="NavBar">
+         <ul>
+           <li><a href="MuscleFactory.html">HOME</a></li>
+           <li><a href="Memberships.html">MEMBERSHIPS</a></li>
+           <li><a href="APPAREL.html">APPAREL</a></li>
+           <li><a href="ABOUT.html">ABOUT</a></li>
+           
+             
+           </ul>
+           <div class="logo">
+            <img src="logo.png" alt="musclefactory">
+         </nav>
+     
+<!--UDEMY #5 HIDDEN SEARCH WIDGET-->
+<div class="search">
+    <input text="text" class="input" placeholder="Search...">
+    <button class="btn">
+    <i class="fas fa-search"></i>
+    </button>
+    
+    </div>
+    
+    
+
+<div class="header">
+    <h1>Select A Membership</h1>
+    
+</div>
+
+
+
+<div class="membership-options">
+    <div class="membership-option">
+        <h3>Month to Month</h3>
+        <p>$54.99</p>
+        <ul>
+            <li>24/7 gym access</li>
+            <li>Free initial personal training session</li>
+            <li>Unlimited group fitness classes</li>
+        </ul>
+        
+          <div class="toggle-container">
+            <input type="checkbox" id="monthtomonth" class="toggle">
+            <label for="monthtomonth"class="label">
+            <div class="ball"></div>
+        </label>
+        <span>Choose Plan</span>
+    </div>
+ </div>
+ 
+    <div class="membership-option">
+        <h3>One Year: Auto Debit</h3>
+        <p>$49.99</p>
+        <ul>
+            <li>All benefits of Month to Month</li>
+            <li>Two free guest passes per month</li>
+            <li>Priority booking for classes</li>
+        </ul>
+        <div class="toggle-container">
+            <input type="checkbox" id="oneyear" class="toggle" >
+            <label for="oneyear" class="label">
+            <div class="ball"></div>
+            </label>
+            <span>Choose Plan</span>
+    </div>
+ 
+ 
+ </div>
+    <div class="membership-option">
+        <h3>Prepaid: 3 Months</h3>
+        <p>$300</p>
+        <ul>
+            <li>One free personal training session</li>
+            <li>Access to special member events</li>
+            <li>Free Wi-Fi & locker room access</li>
+        </ul>
+ 
+        <div class="toggle-container">
+            <input type="checkbox" id="threemonths"class="toggle" >
+            <label for="threemonths" class="label">
+            <div class="ball"></div>
+            </label>
+            <span>Choose Plan</span>
+        </label>
+    </div>
+ </div>
+    
+ </div>
+ </div>
+
+
+  <form action="/submit" class="signupform">
+    <div class="section">
+        <div class="inputs">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="inputs">
+            <label for="credit-card-number">Credit Card Number</label>
+            <input type="text" id="credit-card-number" name="credit-card-number" required>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inputs">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="inputs">
+            <label for="expiration-date">Expiration Date</label>
+            <input type="text" id="expiration-date" name="expiration-date" required>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inputs">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="inputs">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inputs">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+        </div>
+        <div class="inputs">
+            <label for="billing-zip-code">Billing Zip Code</label>
+            <input type="text" id="billing-zip-code" name="billing-zip-code" required>
+        </div>
+    </div>
+    <div class="section">
+        <button type="submit" class="submitbtn">Sign Up</button>
+    </div>
+</form>
+
+<script src="Memberships.js"></script>
+
+
+  </body>
+  <footer>
+    <div class="home">
+     <h2><b>HOME</b></h2>
+     <a href="#"><h3>MuscleFactory.com</h3></a>
+     <a href="#"><h3>Shop Gear</h3></a>
+     <a href="#"><h3>Terms & Condition</h3></a>
+     <a href="#"><h3>Privacy Policy</h3></a>
+    </div>
+    
+    <div class="signup">
+     <h2><b>SIGN UP</b></h2>
+     <a href="#"><h3>Join a Gym Near you</h3></a>
+     <a href="#"><h3>Get a Free Gym Pass</h3></a>
+     <a href="#"><h3>Find a Local Gym Near You</h3></a>
+     <a href="#"><h3>Member Center</h3></a>
+    </div>
+   
+    <div class="company">
+     <h2><b>COMPANY</b></h2>
+     <a href="#"><h3>Own Muscle Factory Franchise</h3></a>
+     <a href="#"><h3>Careers</h3></a>
+     <a href="#"><h3>Press Room</h3></a>
+     <a href="#"><h3>Diversity, Equity & Inclusion</h3></a>
+    </div>
+   
+    <div class="policy">
+     <h2><b>POLICY</b></h2>
+     <a href="#"><h3>Gym Policy</h3></a>
+     <a href="#"><h3>Member Conduct Guidelines</h3></a>
+     <a href="#"><h3>Diversity, Equity & Inclusion</h3></a>
+    </div>
+   
+   
+    <div class="sociallinks">
+     <h3>Social Media Link</h3>
+     <div class="icons">
+         <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+         <!-- Add other social networks as needed -->
+         <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+         <a href="https://www.youtube.com/" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+     </div>
+   </div>
+   
+   </footer>

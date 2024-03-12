@@ -1,0 +1,336 @@
+/* Montserrat Font from google Fonts */
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+.Musclefactory-page {
+    background-image: url('curl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-attachment: fixed;
+}
+
+
+.NavBar{
+    position:fixed;
+    background-color: rgba(70, 67, 67, 0.3);
+    border-color: aliceblue;
+    
+    top:0px;
+    padding-left: 150px;
+    height:100px;
+    width:2000px;
+    margin-right: 10px;
+    border-left:6px solid black;
+}
+.NavBar li{
+    display:inline;
+    line-height: 65px;
+   color: rgb(252, 252, 252);
+   width:300px;
+   
+   margin-left: 20px;
+   
+   transition: all 0.3s ease-in-out;
+    font-weight: 800;
+    padding: 12px 40px;
+    margin: 10;
+   
+    
+}
+.NavBar a {
+    color: inherit; 
+    font-weight: normal;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.logo img{
+    width:150px;
+    height:100px;
+position:fixed;
+    left:0px;
+    top:0px;
+}
+.NavBar li:hover {
+    background-color: azure;
+    color:black;
+    padding: 40px;
+    border: 4px solid azure;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+}   
+
+  /* UDEMY #26 Active navbar settings to change when scrolling down */
+  .NavBar.active {
+    background-color: rgb(190, 190, 190); 
+    transition: background-color 0.3s ease-in-out; 
+    position:fixed;
+   
+    top:0px;
+    padding-left: 150px;
+    height:100px;
+    width:2000px;
+    margin-right: 10px;
+ 
+}
+.NavBar.active li {
+    color: black;
+}
+.NavBar.active li:hover {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding: 40px;
+    border: 4px solid rgb(88, 88, 88);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+}   
+.NavBar.active li.menu {
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 12px;
+}  
+
+/*UDEMY #5 HIDDEN SEARCH WIDGET*/
+.search {
+    position: fixed; 
+    top: 20px; 
+    right: 5%; 
+    z-index: 2000; 
+}
+.search .input {
+  
+    border:0;
+    font-size: 18px;
+    padding:10px;
+    height:25px;
+    width:30px;
+    transition:width 0.3s ease;
+}
+.btn {
+    position:absolute;
+    background-color: rgba(106, 21, 21, 1);
+    border:0;
+    cursor:pointer;
+    font-size: 24px;
+    top:0px;
+    left:0px;
+    height:50px;
+    width:50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, .input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width:200px;
+    height:30px;
+}
+
+.search.active .btn {
+    transform: translateX(210px);
+}
+/*END  OF UDEMY #5 HIDDEN SEARCH WIDGET */
+    .zipsearch {
+    background-color: rgba(70, 67, 67, 0.3);
+    padding: 30px;
+    margin-top: 15%;
+    margin-left: 600px;
+    margin-right: 600px;
+    display: flex;
+    align-items: center;
+    }
+ .zipsearch form {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .inputgroup {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 20px; 
+    }
+
+    
+   .zipsearch input {
+    
+        width: auto; 
+    padding: 10px;
+    margin-bottom: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 60px;
+  
+ 
+
+    }
+    .search-button {
+        padding: 18px 30px;
+        background-color: rgba(106, 21, 21, 1); 
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer;
+        font-size: 20px; 
+        margin-left: 50px;
+        
+  
+      }
+      .zipsearch label {
+  font-size: 25px;
+  color: aliceblue;
+  
+    }
+      
+    .locations {
+        background-color: rgba(70, 67, 67, 0.3);
+    padding: 350px;
+    padding-bottom: 150px;
+    
+    }
+    .location1 {
+        position:absolute;
+        color:white;
+        background-color: rgba(106, 21, 21, 1);
+        padding:65px;
+        top: 550px;
+        left:110px;
+        border-radius: 12px;
+        h2{
+            font-size: 18px;
+        }
+   
+    }
+    .location2 {
+        position:absolute;
+        color:white;
+        background-color: rgba(106, 21, 21, 1);
+        padding:65px;
+        top: 550px;
+        right:750px;
+        border-radius: 12px;
+       
+        h2{
+            font-size: 18px;
+        } 
+       
+    }
+    .location3 {
+        position:absolute;
+        color:white;
+        background-color: rgba(106, 21, 21, 1);
+        padding:65px;
+        top: 550px;
+        right:200px;
+        border-radius: 12px;
+        h2{
+            font-size: 18px;
+        } 
+    }
+    .nearyou {
+        position: absolute;
+        color: aliceblue;
+        top: 450px;
+        right: 460px;
+        padding: 17px;
+        
+    }
+    .nearyou h3 {
+        font-size: 18px;
+        min-height: 50px; 
+    }
+    .gymnearyou {
+        position:absolute;
+        bottom:460px;
+        left:800px;
+        color:white;
+
+    }
+    
+   
+    .locations .locationbutton {
+        padding: 15px 25px;
+        background-color: rgb(0, 0, 0); 
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer;
+        font-size: 20px; 
+        margin-left: 60px;
+    }
+footer {
+    display: flex;
+    flex-direction: row; 
+    align-items: start;
+    background-color: rgb(178, 180, 182);
+    width: 100%;
+    height: 220px;
+    margin-top: auto; 
+}
+
+
+.home, .signup, .company, .policy, .sociallinks{
+    margin-left: 120px; 
+    margin-top: 20px; 
+  
+}
+.sociallinks .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-top: 10px; 
+}
+.sociallinks .icons .social-icon {
+color:black;
+    font-size: 35px; 
+}
+
+footer h3 {
+    color: black; 
+    font-weight: normal; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+footer a {
+    color: black; 
+    text-decoration: none; 
+    display: block; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+/*----------END OF HOMEPAGE----------------*/
+
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width:200px;
+}
+/*MAKES the checkbox invisible so we can add a slider instead */
+.toggle {
+    visibility: hidden;
+}
+.label {
+    width: 80px;
+    height:40px;
+}
+
+.name {
+    position:absolute;
+    top:100px;
+    left:100px;
+    color:white;
+    font-size: 8px;
+
+}
+
+
